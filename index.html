@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind & JS</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <h1 class="text-3xl font-bold font-momo text-blue-700 bg-sky-100 p-12 text-center">
-        Tailwind CSS with javascript practice. 
+        Tailwind CSS with javascript practice.
     </h1>
 
     <section class="flex justify-center ">
         <div class="w-3/4 bg-lime-100 p-20 flex justify-center flex-col items-center">
             <h3 class=" text-2xl">Login</h3>
-            <input class="w-3/4 block my-8 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-green-600 hover:border-green-400 " type="email" name="email" id="">
-            <input class="w-3/4 block px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-green-600 hover:border-green-400 " type="password" name="password" id="">
 
-            <button class=" w-1/4 mt-6 text-xl py-2 px-6 bg-green-700 text-white rounded-lg hover:bg-green-800 transition-all duration-300 ease-in-out" type="submit">Submit</button>
+            <input id="user-email"
+                class="w-3/4 block my-8 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-green-600 hover:border-green-400 "
+                type="email" name="email" id="">
+
+            <input id="user-password"
+                class="w-3/4 block px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-green-600 hover:border-green-400 "
+                type="password" name="password" id="">
+
+            <button id="login-submit" class=" w-1/4 mt-6 text-xl py-2 px-6 bg-green-700 text-white rounded-lg hover:bg-green-800 transition-all duration-300 ease-in-out" type="submit">
+                Submit
+            </button>
+
         </div>
     </section>
+
+    <script src="assets/js/bank.js"></script>
 </body>
+
 </html>
